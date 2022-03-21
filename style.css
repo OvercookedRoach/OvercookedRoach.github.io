@@ -1,0 +1,95 @@
+:root{
+	--border-width: 1px;
+}
+body {
+	background-color: white;
+	font-family: "Helvetica", sans-serif, monospace;
+	width: 60%;
+	margin: auto;
+	margin-top: 0;
+	max-width: 100%;
+}
+img, video{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	border-radius: 1rem;
+	box-shadow: 0 0 25px #0e0f1155;
+}
+.imagem_pixelada{
+	image-rendering: pixelated;
+}
+h1 {
+	font-size: 42px;
+	border-bottom: 0px;
+}
+h2, h3 {
+	border: var(--border-width) solid black;
+	border-radius: 1rem 1rem 0 0;
+	border-bottom: 0;
+	padding: 1rem;
+	width: fit-content;
+	margin: 0 0 0 1rem;
+	box-shadow: 0 0 25px #0e0f1155;
+}
+.title {
+	--font-family: 'ImpactLabel';
+	font-size: 52px;
+	color: orangered;
+	text-align: center;
+	--margin-top: 0px;
+}
+.sided_image{
+	--width: 400px;
+	width: 49.7%;
+	display: inline;
+	text-align: center;
+}
+blockquote {
+	border: var(--border-width) solid black;
+	border-top: 0;
+	margin: 0 2rem 1rem;
+	color: black;
+	padding: 1rem;
+	border-radius: 0 0 0.5rem 0.5rem;
+	box-shadow: 0 0 25px #0e0f1155;
+}
+hr {
+	height: var(--border-width);
+	background-color: black;
+	max-width: 90%;
+	margin: 3rem auto;
+}
+p {
+	margin: 0;
+	padding: 0;
+}
+.copyright{
+	font-size: 12px;
+}
+
+@media (prefers-color-scheme: dark) {
+	html {
+		color: peachpuff;
+	}
+	body {
+		background-color: #212224ff;
+		background-image: linear-gradient(#212224ff, #0e0f11);
+	}
+	.title {
+		color: #29b9f0ff;
+	}
+	blockquote {
+		border-color: peachpuff;
+		color: peachpuff;
+	}
+	hr {
+		background-color: peachpuff;
+	}
+	img, video, h2, blockquote {
+		box-shadow: 0 0 25px #0e0f11;
+	}
+	h2, blockquote {
+		border-color: peachpuff;
+	}
+}
