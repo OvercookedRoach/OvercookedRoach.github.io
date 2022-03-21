@@ -10,34 +10,47 @@
 <body style="box-shadow: 5px 5px 25px #00000044; border-radius: 25px; padding: 25px; margin-top: 25px;">
 
     <header style="margin-bottom: 50px;">
-        <h1 style="text-align: center;">Portfolio do Arthur</h1>
 
-        <img src="images/profile.png" alt="" style="display: inline-block; max-width: 100px; vertical-align: middle;">
-        <p style="display: inline-block;"><h4 style="display: inline;"><b>Eu gosto de sangue e pus</b></h4></p>
-        
+        <h1 class="title" style="text-align: center;">Portfolio do Arthur</h1>
+
+        <div style="display: flex;">
+            <div class="card" style="flex: 50%; display: flex;">
+                <img src="images/profile.png" style="width: 50%;">
+                <p style="margin: 10px; font-size: large; margin-left: 25px;">Eu gosto colecionar coisas mortas como baratas, pedaços de aves, etc.<br>Minhas cores favoritas são azul, vermelho-sangue e amarelo-pus</p>
+            </div>
+    
+            <div class="card" style="flex: 25%;">
+                <h4 style="font-size: x-large;">My links</h4>
+                <a href="https://www.artstation.com/arthurjrm"> <h4>ArtStation</h4> </a>
+                <a href="https://github.com/OvercookedRoach/"> <h4>GitHub</h4> </a>
+            </div>
+        </div>
+
     </header>
-
-    <div style="box-shadow: 5px 5px 25px #00000044; border-radius: 25px; padding: 25px;">
-
-        <h4 style="font-size: x-large;">My links</h4>
-
-        <a href="https://www.artstation.com/arthurjrm"> <h4>ArtStation</h4> </a>
-        <a href="https://github.com/OvercookedRoach/"> <h4>GitHub</h4> </a>
-
-    </div>
 
     <hr>
 
-    <div style="box-shadow: 5px 5px 25px #00000044; border-radius: 25px; padding: 25px;">
+    <div class="card">
 
         <h4 style="font-size: x-large;">Week Production</h4>
 
-        <a href="./week_production/week_8.html"> <h4>Latest week</h4> </a>
-
-        <a href="./week_production/week_4.html"> <h4>Week 4</h4> </a>
-        <a href="./week_production/week_6.html"> <h4>Week 6</h4> </a>
-        <a href="./week_production/week_7.html"> <h4>Week 7</h4> </a>
-        <a href="./week_production/week_8.html"> <h4>Week 8</h4> </a>
+        <ul>
+            <li style="margin: 0px 0 15px 0;">
+                <a href="./week_production/week_8.html"> Latest week </a>
+            </li>
+            <li style="margin: 0px 0 15px 0;">
+                <a href="./week_production/week_4.html"> Week 4 </a>
+            </li>
+            <li style="margin: 0px 0 15px 0;">
+                <a href="./week_production/week_6.html"> Week 6 </a>
+            </li>
+            <li style="margin: 0px 0 15px 0;">
+                <a href="./week_production/week_7.html"> Week 7 </a>
+            </li>
+            <li style="margin: 0px 0 15px 0;">
+                <a href="./week_production/week_8.html"> Week 8 </a>
+            </li>
+        </ul>
 
     </div>
 </body>
