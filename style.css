@@ -58,7 +58,10 @@
 	--link-hover-dark: orangered;
 
 	--secondary-accent: orangered;
-	--primary-accent: #7AFFFF;
+	--old-primary-accent: #7AFFFF;
+	--primary-accent: red;
+
+	--button-shadow: #bd0808;
 
 	--back-color: #f3f3f3;
 	--back-color-dark: #202020;
@@ -195,13 +198,13 @@ li {
 	box-shadow: var(--extrusion-up);
 	width: fit-content;
 
-	background: linear-gradient(145deg, var(--primary-accent), #54B7BD);
+	background: linear-gradient(145deg, var(--primary-accent), var(--button-shadow));
 	box-shadow: .3rem .3rem .6rem var(--shadow-color), -.3rem -.3rem .4rem var(--light-color);
-	color: var(--text-color);
+	color: #ededed;
 }
 
 .button:hover {
-	box-shadow: .3rem .3rem .6rem rgba(0, 0, 0, 0.15), -.3rem -.3rem .6rem var(--light-color);
+	box-shadow: .3rem .3rem .6rem rgba(0, 0, 0, 0.2), -.3rem -.3rem .6rem var(--light-color);
 	color: white;
 }
 
@@ -212,7 +215,7 @@ li {
 }
 
 .title {
-	color: var(--secondary-accent);
+	color: var(--primary-accent);
 	text-align: center;
 	font-size: 3vw;
 }
@@ -226,6 +229,7 @@ li {
 
 .copyright {
 	font-size: x-small;
+	width: fit-content;
 }
 
 .main-card {
@@ -236,9 +240,6 @@ li {
 }
 
 #go-back-button {
-	width: fit-content;
-	text-align: center;
-	background-color: var(--secondary-accent);
 	padding: 1rem;
 	position: fixed;
 	top: 1rem;
@@ -250,6 +251,7 @@ li {
 	display: grid;
 	place-items: center;
 
+
 	box-shadow: 3px 3px 3px var(--shadow-color), -3px -3px 3px var(--light-color);
 }
 
@@ -260,7 +262,7 @@ li {
 }
 
 #main-title {
-	color: #52dfe9;
+	color: var(--primary-accent);
 	margin-top: 5vh;
 	margin-bottom: 1rem;
 }
