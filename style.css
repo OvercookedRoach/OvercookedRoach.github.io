@@ -85,7 +85,7 @@
 
 ::selection {
 	background-color: var(--primary-accent);
-	/* color: white; */
+	color: white;
 }
 
 body {
