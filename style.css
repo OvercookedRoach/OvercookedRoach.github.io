@@ -105,8 +105,9 @@ video {
 	margin: 0;
 	padding: 0;
 	border-radius: 1rem;
-	box-shadow: .3rem .3rem .6rem var(--shadow-color),
-		-.3rem -.3rem .6rem var(--light-color);
+
+	max-height: 75vh;
+	object-fit: cover;
 }
 
 iframe {
@@ -194,10 +195,6 @@ li {
 	padding: .5rem;
 }
 
-.sketchfab-embed-wrapper {
-	padding: 1rem;
-}
-
 .title {
 	color: orangered;
 	text-align: center;
@@ -236,6 +233,8 @@ li {
 	border-radius: 100%;
 	display: grid;
 	place-items: center;
+
+	box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1), -3px -3px 3px white;
 }
 
 #go-back-button a {
@@ -250,6 +249,7 @@ li {
 	margin: auto;
 	margin-top: 5vh;
 	max-width: 90%;
+	margin-bottom: 1rem;
 }
 
 #me-block {
@@ -263,16 +263,15 @@ li {
 
 #about-me-card p {
 	font-style: italic;
-
 	box-shadow: none;
 }
 
 .card {
 	border: var(--border-width) solid var(--light-color);
 	box-shadow: .3rem .3rem .6rem var(--shadow-color), -.3rem -.3rem .6rem var(--light-color);
-	border-radius: 25px;
-	padding: 25px;
-	margin: 25px;
+	border-radius: 2rem;
+	padding: 1rem;
+	margin: 1.2rem;
 	background-color: var(--card-back-color);
 }
 
