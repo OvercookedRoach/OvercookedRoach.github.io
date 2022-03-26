@@ -300,10 +300,6 @@ li {
 
 @media screen and (max-width: 1100px) {
 
-	p {
-		font-size: 3rem;
-	}
-
 	.main-card {
 		margin: 0;
 		width: auto;
@@ -330,7 +326,7 @@ li {
 
 	li {
 		display: inline-block;
-		margin: 0 .5rem;
+		margin: .5rem;
 	}
 }
 
