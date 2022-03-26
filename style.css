@@ -84,7 +84,6 @@
 }
 
 body {
-	/*font-family: "Helvetica", sans-serif, monospace;*/
 	width: 60%;
 	margin: auto;
 	margin-top: 5vh;
@@ -153,13 +152,7 @@ p {
 
 blockquote {
 	border: var(--border-width) solid black;
-	/* border-top: 0; */
-	/* margin: 0 2rem 1rem; */
 	color: var(--text-color);
-	/* padding: 1rem; */
-	/* border-radius: 0 0 2rem 2rem; */
-	/* box-shadow: 0 3px 10px var(--shadow-color); */
-	/* background-color: var(--card-back-color); */
 	font-weight: 100;
 }
 
@@ -298,7 +291,6 @@ li {
 
 	body {
 		background-color: var(--back-color-dark);
-		--background-image: linear-gradient(var(--back-color-dark), var(--back-color-dark));
 	}
 
 	.title {
