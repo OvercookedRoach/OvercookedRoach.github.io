@@ -57,8 +57,8 @@
 	--link-hover: #4fcdff;
 	--link-hover-dark: orangered;
 
-	--accent-color: orangered;
-	--accent-color-dark: #4fcdff;
+	--secondary-accent: orangered;
+	--primary-accent: #7AFFFF;
 
 	--back-color: #f3f3f3;
 	--back-color-dark: #202020;
@@ -81,8 +81,8 @@
 }
 
 ::selection {
-	background-color: var(--accent-color);
-	color: white;
+	background-color: var(--primary-accent);
+	/* color: white; */
 }
 
 body {
@@ -184,19 +184,35 @@ li {
 	width: fit-content;
 }
 
+.button-li {
+	display: inline-block;
+	margin: .5rem;
+}
+
 .button {
 	border-radius: 2rem;
 	padding: .75rem;
 	box-shadow: var(--extrusion-up);
 	width: fit-content;
+
+	background: linear-gradient(145deg, var(--primary-accent), #54B7BD);
+	box-shadow: .3rem .3rem .6rem var(--shadow-color), -.3rem -.3rem .4rem var(--light-color);
+	color: var(--text-color);
 }
 
 .button:hover {
+	box-shadow: .3rem .3rem .6rem rgba(0, 0, 0, 0.15), -.3rem -.3rem .6rem var(--light-color);
+	color: white;
+}
+
+.button:active {
+	background-image: none;
 	box-shadow: var(--extrusion-down);
+	color: var(--text-color);
 }
 
 .title {
-	color: orangered;
+	color: var(--secondary-accent);
 	text-align: center;
 	font-size: 3vw;
 }
@@ -222,7 +238,7 @@ li {
 #go-back-button {
 	width: fit-content;
 	text-align: center;
-	background-color: var(--accent-color);
+	background-color: var(--secondary-accent);
 	padding: 1rem;
 	position: fixed;
 	top: 1rem;
@@ -244,7 +260,7 @@ li {
 }
 
 #main-title {
-	color: rgb(47, 199, 255);
+	color: #52dfe9;
 	margin-top: 5vh;
 	margin-bottom: 1rem;
 }
@@ -266,7 +282,7 @@ li {
 .card {
 	border: var(--border-width) solid var(--light-color);
 	box-shadow: var(--extrusion-up);
-	border-radius: 2rem;
+	border-radius: 2.5rem;
 	padding: 1rem;
 	margin: 1.2rem;
 	background-color: var(--card-back-color);
@@ -317,16 +333,11 @@ li {
 		position: fixed;
 		top: auto;
 		bottom: 2rem;
-		background-color: var(--accent-color-dark);
+		background-color: var(--primary-accent);
 	}
 
 	.title {
 		font-size: 5vw;
-	}
-
-	li {
-		display: inline-block;
-		margin: .5rem;
 	}
 }
 
@@ -334,12 +345,12 @@ li {
 	:root {
 		background-color: var(--back-color-dark);
 
-		--light-color: rgba(255, 255, 255, 0.05);
+		--light-color: rgba(199, 199, 199, 0.1);
 		--shadow-color: rgba(0, 0, 0, 0.3);
 	}
 
 	html {
-		color: peachpuff;
+		color: var(--link-color-dark);
 	}
 
 	body {
@@ -347,17 +358,17 @@ li {
 	}
 
 	.title {
-		color: var(--accent-color-dark);
+		color: var(--primary-accent);
 	}
 
 	blockquote {
-		border-color: peachpuff;
-		color: peachpuff;
+		border-color: var(--link-color-dark);
+		color: var(--link-color-dark);
 		background-color: var(--back-color-dark);
 	}
 
 	hr {
-		background-color: peachpuff;
+		background-color: var(--link-color-dark);
 	}
 
 	img,
@@ -368,12 +379,12 @@ li {
 	}
 
 	h2 {
-		border-color: peachpuff;
+		border-color: var(--link-color-dark);
 		background-color: var(--back-color-dark);
 	}
 
 	a {
-		color: peachpuff;
+		color: var(--link-color-dark);
 	}
 
 	a:hover {
@@ -386,6 +397,7 @@ li {
 	h4,
 	h5,
 	h6 {
+
 		background-color: var(--card-back-color-dark);
 	}
 
@@ -394,7 +406,7 @@ li {
 	}
 
 	#go-back-button {
-		background-color: var(--accent-color-dark);
+		background-color: var(--primary-accent);
 	}
 
 	/* Individual stuff for artistic purposes */
