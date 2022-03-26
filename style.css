@@ -55,18 +55,19 @@
 
 	--link-color: #333333;
 	--link-color-dark: peachpuff;
-	--link-hover: #2cb7ee;
+	--link-hover: #4fcdff;
 	--link-hover-dark: orangered;
 
 	--accent-color: orangered;
-	--accent-color-dark: #2cb7ee;
+	--accent-color-dark: #4fcdff;
 
-	--back-color: #eeeeee;
+	--back-color: #f3f3f3;
 	--back-color-dark: #212224ff;
-	--card-back-color: white;
+	--card-back-color: #f7f7f7;
 	--card-back-color-dark: #373636;
 
-	--shadow-color: hsla(0, 0%, 0%, 0.3);
+	--light-color: white;
+	--shadow-color: rgba(209, 205, 199, 0.5);
 	--shadow-color-dark: black;
 
 	--border-col: black;
@@ -75,7 +76,7 @@
 	display: grid;
 	align-items: center;
 
-	background-color: var(--back-color-dark);
+	background-color: var(--back-color);
 }
 
 ::selection {
@@ -84,18 +85,8 @@
 }
 
 body {
-	width: 60%;
-	margin: auto;
-	margin-top: 5vh;
-	margin-bottom: 5vh;
-	max-width: 100%;
-	padding: 0 5rem 5rem 5rem;
-	box-shadow: 0px 0px 20px #00000033;
-	background-color: #e6e6e6;
-	box-shadow: 5px 5px 25px #000000c1;
-	border-radius: 25px;
-	background-color: var(--back-color);
-
+	margin: 0;
+	width: 100%;
 	font-weight: 400;
 }
 
@@ -114,7 +105,8 @@ video {
 	margin: 0;
 	padding: 0;
 	border-radius: 1rem;
-	box-shadow: 0 0 25px var(--shadow-color);
+	box-shadow: .3rem .3rem .6rem var(--shadow-color),
+		-.3rem -.3rem .6rem var(--light-color);
 }
 
 iframe {
@@ -122,6 +114,9 @@ iframe {
 	height: 35rem;
 	border-radius: 1rem;
 	box-shadow: 0 0 25px var(--shadow-color);
+
+	box-shadow: .3rem .3rem .6rem var(--shadow-color),
+		-.3rem -.3rem .6rem var(--light-color);
 }
 
 .imagem_pixelada {
@@ -136,6 +131,7 @@ h1 {
 	font-size: 42px;
 	border-bottom: 0px;
 }
+
 h1,
 h2,
 h3,
@@ -143,11 +139,25 @@ h4,
 h5,
 h6 {
 	font-family: 'Roboto';
+
+	box-shadow: .3rem .3rem .6rem var(--shadow-color),
+		-.3rem -.3rem .6rem var(--light-color);
+
+	padding: 1.2rem;
+	width: fit-content;
+	border-radius: 5rem;
+
+	background-color: var(--card-back-color);
 }
 
 p {
 	padding: 1rem;
 	font-size: large;
+
+	border-radius: 2rem;
+
+	box-shadow: .3rem .3rem .6rem var(--shadow-color),
+		-.3rem -.3rem .6rem var(--light-color);
 }
 
 blockquote {
@@ -158,13 +168,30 @@ blockquote {
 
 hr {
 	height: var(--border-width);
-	background-color: var(--text-color-dark);
-	max-width: 90%;
+	background-color: var(--shadow-color);
+	max-width: 75%;
 	margin: 3rem auto;
+	border: none;
+	height: .5rem;
+	border-radius: 2rem;
+
+	box-shadow: inset 3px 3px 3px rgba(0, 0, 0, 0.1), inset -3px -3px 3px white;
+}
+
+ul {
+	list-style: inside;
 }
 
 li {
-	margin: 0 0 15px 0;
+	margin: 0 0 1rem 0;
+
+	box-shadow: .3rem .3rem .6rem var(--shadow-color),
+		-.3rem -.3rem .6rem var(--light-color);
+
+	width: fit-content;
+
+	border-radius: 2rem;
+	padding: .5rem;
 }
 
 .sketchfab-embed-wrapper {
@@ -186,6 +213,13 @@ li {
 
 .copyright {
 	font-size: x-small;
+}
+
+.main-card {
+	width: 60%;
+	margin: auto;
+	margin-top: 5vh;
+	margin-bottom: 5vh;
 }
 
 #go-back-button {
@@ -211,7 +245,11 @@ li {
 }
 
 #main-title {
-	color: rgb(32, 146, 191);
+	color: rgb(47, 199, 255);
+	width: auto;
+	margin: auto;
+	margin-top: 5vh;
+	max-width: 90%;
 }
 
 #me-block {
@@ -225,15 +263,26 @@ li {
 
 #about-me-card p {
 	font-style: italic;
+
+	box-shadow: none;
 }
 
 .card {
-	border: var(--border-width) solid black;
-	box-shadow: 0px 3px 10px var(--shadow-color);
+	border: var(--border-width) solid var(--light-color);
+	box-shadow: .3rem .3rem .6rem var(--shadow-color), -.3rem -.3rem .6rem var(--light-color);
 	border-radius: 25px;
 	padding: 25px;
 	margin: 25px;
 	background-color: var(--card-back-color);
+}
+
+.inverted-card {
+	border: var(--border-width) solid var(--light-color);
+	box-shadow: inset .3rem .3rem .6rem var(--shadow-color), inset -.3rem -.3rem .6rem var(--light-color);
+	border-radius: 25px;
+	padding: 25px;
+	margin: 25px;
+	background-color: #ededed;
 }
 
 #main-profile-pic {
@@ -243,6 +292,10 @@ li {
 	height: 100%;
 	width: auto;
 	object-fit: cover;
+
+	border: 2px solid var(--light-color);
+	box-shadow: .3rem .3rem .6rem var(--shadow-color), -.3rem -.3rem .6rem var(--light-color),
+		inset .2rem .2rem .5rem var(--shadow-color), inset -.2rem -.2rem .5rem var(--light-color);
 }
 
 /* Individual stuff for artistic purposes */
@@ -254,9 +307,8 @@ li {
 /**/
 
 @media screen and (max-width: 1100px) {
-	body {
-		margin: auto;
-		margin-top: 0;
+	.main-card {
+		margin: 0;
 		width: auto;
 		border-radius: 0;
 		box-shadow: none;
@@ -283,6 +335,9 @@ li {
 @media (prefers-color-scheme: dark) {
 	:root {
 		background-color: var(--back-color-dark);
+
+		--light-color: rgba(84, 84, 84, 0.2);
+		--shadow-color: rgba(0, 0, 0, 0.3);
 	}
 
 	html {
@@ -325,6 +380,15 @@ li {
 
 	a:hover {
 		color: var(--link-hover-dark)
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		background-color: var(--card-back-color-dark);
 	}
 
 	.card {
