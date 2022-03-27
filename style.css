@@ -279,10 +279,7 @@ textarea:focus {
 }
 
 .button:hover {
-	/* box-shadow: .3rem .3rem .6rem rgba(0, 0, 0, 0.22), -.3rem -.3rem .3rem var(--light-color); */
 	color: var(--button-text-hover-color);
-	/* padding: 0.56rem; */
-	/* border: var(--primary-accent) solid 0.2rem; */
 }
 
 .button:active {
