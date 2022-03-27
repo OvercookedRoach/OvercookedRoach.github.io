@@ -63,9 +63,9 @@
 
 	--button-shadow: #bd0808;
 
-	--back-color: #f3f3f3;
+	--back-color: #eeeeee;
 	--back-color-dark: #202020;
-	--card-back-color: #f7f7f7;
+	--card-back-color: #f2f2f2;
 	--card-back-color-dark: #252525;
 
 	--light-color: white;
@@ -176,6 +176,7 @@ hr {
 ul {
 	list-style: none;
 	width: fit-content;
+	padding: 1rem;
 }
 
 li {
@@ -203,7 +204,12 @@ li {
 
 .button:hover {
 	box-shadow: .3rem .3rem .6rem rgba(0, 0, 0, 0.2), -.3rem -.3rem .6rem var(--light-color);
-	color: white;
+	box-shadow: var(--extrusion-down), var(--extrusion-up);
+	background-image: none;
+	color: var(--text-color);
+
+	padding: 0.56rem;
+	border: red solid 0.2rem;
 }
 
 .button:active {
@@ -216,6 +222,17 @@ li {
 	color: var(--primary-accent);
 	text-align: center;
 	font-size: 3vw;
+
+	margin-top: 3rem;
+	margin-bottom: 1rem;
+	padding-left: 3rem;
+	padding-right: 3rem;
+
+	box-shadow: var(--extrusion-down), var(--extrusion-up);
+	border: var(--back-color) 0.8rem solid;
+
+	text-shadow: -.1rem -.1rem .3rem var(--shadow-color),
+		.1rem .1rem .3rem var(--light-color);
 }
 
 .sided_image {
@@ -261,14 +278,6 @@ li {
 
 #main-title {
 	color: rgb(242, 0, 0);
-	margin-top: 3rem;
-	margin-bottom: 1rem;
-
-	padding-left: 3rem;
-	padding-right: 3rem;
-
-	text-shadow: -.1rem -.1rem .3rem var(--shadow-color),
-				 .1rem .1rem .3rem var(--light-color);
 }
 
 #me-block {
@@ -286,13 +295,36 @@ li {
 	box-shadow: none;
 }
 
+#my-links {
+	flex: 33%;
+}
+
+#my-stuff {
+	display: flex;
+}
+
+#art-card {
+	flex: 33%;
+}
+
+#projects-card {
+	flex: 33%;
+}
+
+#week-production-card {
+	flex: 33%;
+}
+
 .card {
 	border: var(--border-width) solid var(--light-color);
-	box-shadow: var(--extrusion-up);
+	box-shadow: var(--extrusion-up), var(--extrusion-down);
 	border-radius: 2.5rem;
 	padding: 1rem;
 	margin: 1.2rem;
 	background-color: var(--card-back-color);
+	border: var(--card-back-color) .8rem solid;
+
+	width: fit-content;
 }
 
 .inverted-card {
@@ -332,6 +364,14 @@ li {
 		padding-top: 0;
 	}
 
+	#my-stuff {
+		display: block;
+	}
+
+	.card {
+		width: auto;
+	}
+
 	#me-block {
 		display: inline-block;
 	}
@@ -344,8 +384,9 @@ li {
 	}
 
 	.title {
-		font-size: 5vw;
+		font-size: 6.5vw;
 		margin: auto;
+		margin-top: 2rem;
 		max-width: 100%;
 	}
 }
