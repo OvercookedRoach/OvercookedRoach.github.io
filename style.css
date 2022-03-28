@@ -275,6 +275,8 @@ textarea:focus {
 	box-shadow: .3rem .3rem .3rem var(--shadow-color), -.3rem -.3rem .4rem var(--light-color);
 	color: var(--button-text-color);
 
+	border: var(--card-back-color) solid .2rem;
+
 	font-size: large;
 }
 
@@ -283,12 +285,16 @@ textarea:focus {
 }
 
 .button:active {
-	background-image: none;
+	background-image: linear-gradient(var(--back-gradient-to), var(--back-color));
 	box-shadow: var(--extrusion-down);
 	color: var(--text-color);
 
-	padding: 0.56rem;
 	border: var(--primary-accent) solid 0.2rem;
+}
+
+#button-inactive {
+	background-image: linear-gradient(var(--back-color), var(--back-gradient-to));
+	color: var(--text-color);
 }
 
 .title {
@@ -339,6 +345,7 @@ textarea:focus {
 
 #main-title {
 	color: rgb(242, 0, 0);
+	margin-left: 1rem;
 }
 
 #me-block {
@@ -431,6 +438,10 @@ textarea:focus {
 	#go-back-button {
 		top: auto;
 		bottom: 2rem;
+	}
+
+	#go-back-button .button {
+		box-shadow: none;
 	}
 
 	.title {
