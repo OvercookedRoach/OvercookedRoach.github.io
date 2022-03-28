@@ -154,12 +154,12 @@
                 <h2>Contact me</h2>
                 <form action="">
                     <div style="margin-left: auto; margin-right: auto; width: fit-content;">
-                        <input type="text" placeholder="Name">
-                        <input type="email" placeholder="address@domain.com">
+                        <input type="text" placeholder="Name" onclick="pop()">
+                        <input type="email" placeholder="address@domain.com" onclick="pop()">
                     </div>
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Message" onclick="pop()"></textarea>
                     <div style="margin-left: auto; margin-right: auto; width: fit-content;">
-                        <input type="button" value="Send">
+                        <input type="button" value="Send" onclick="pop()">
                     </div>
                     
                 </form>
@@ -169,3 +169,13 @@
 </body>
 
 </html>
+
+<script>
+    var pop_sound = new Audio('./sounds/pop.mp3');
+
+    function pop() {
+        pop_sound.play();
+    }
+
+    document.getElementsByClassName("button").onclick = function popme() {pop_sound.play();}
+</script>
