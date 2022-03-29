@@ -57,6 +57,8 @@
 
 	/* colors */
 
+	--title-color: rgb(242, 0, 0);
+
 	--text-color: #333333;
 	--text-color-dark: peachpuff;
 
@@ -278,6 +280,8 @@ textarea:focus {
 	border: var(--card-back-color) solid .2rem;
 
 	font-size: large;
+
+	user-select: none;
 }
 
 .button:hover {
@@ -298,7 +302,7 @@ textarea:focus {
 }
 
 .title {
-	color: var(--primary-accent);
+	color: var(--title-color);
 	text-align: center;
 	font-size: 3vw;
 
@@ -344,7 +348,6 @@ textarea:focus {
 }
 
 #main-title {
-	color: rgb(242, 0, 0);
 	margin-left: 1rem;
 }
 
@@ -402,6 +405,8 @@ textarea:focus {
 	height: 100%;
 	width: auto;
 	object-fit: cover;
+
+	max-height: 20vw;
 }
 
 /* Individual stuff for artistic purposes */
