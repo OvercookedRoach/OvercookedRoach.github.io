@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name="viewport" content="width=device-width">
+    <meta property="og:image" content="https://overcookedroach.github.io/images/open-graph-image.png">
+    <meta property="og:title" content="Arthur Junio">
+    <meta property="og:description" content="Game Artist | Dev">
+    <meta property="og:site_name" content="Arthur's weird portfolio">
+    <title>Arthur Junio</title>
+    <link rel='stylesheet' href="style.css">
+    <link rel='shortcut icon' href="images/favicon.png">
+</head>
+<body>
+    <main>
+        <div class="main-card">
+            <h1 id="main-title" class="title">ARTHUR JUNIO</h1>
+
+            <div id="me-block">
+                <div id="about-me-card" class="card">
+                    <img id="main-profile-pic" src="images/profile.png" class="imagem_pixelada">
+                    <p id="about-me" style="margin: 10px; margin-left: 25px;">"I like to collect dead
+                        stuff like cockroaches, moths, bees and any other animal parts I can get my hands on."</p>
+                </div>
+                <div class="card" id="my-links">
+                    <h2>My links</h2>
+                    <ul>
+                        <li class="button-li"><a href="https://www.artstation.com/arthurjrm"><div class="button">ArtStation</div></a>
+                        <li class="button-li"><a href="https://github.com/OvercookedRoach/"><div class="button">GitHub</div></a>
+                        <li class="button-li"><a href="https://www.sketchfab.com/arthurjrm/"><div class="button">Sketchfab</div></a>
+                        <li class="button-li"><div class="button" id="button-inactive">My CV/Résumé</div>
+                    </ul>
+                </div>
+            </div>
+            </div>
+    </main>
+</body>
