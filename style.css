@@ -42,6 +42,8 @@
 	font-style: italic;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif&display=swap');
+
 ::-webkit-scrollbar {
 	background-color: var(--back-color);
 }
@@ -166,17 +168,18 @@ h6 {
 }
 
 h2 {
-	margin: 0 0 30px 0
+	margin: 0 0 1rem 0
 }
 
 p {
 	padding: 2rem;
 	font-size: 1.1rem;
 	border-radius: 2rem;
-	/* box-shadow: var(--extrusion-up); */
+	box-shadow: var(--extrusion-up);
 	color: var(--text-color);
-	/* background-color: var(--card-back-color); */
+	background-color: var(--card-back-color);
 	line-height: 1.6rem;
+	font-weight: 400;
 }
 
 blockquote {
@@ -193,7 +196,6 @@ hr {
 	border: none;
 	height: .5rem;
 	border-radius: 2rem;
-	height: 0;
 
 	box-shadow: inset .1rem .1rem .1rem var(--shadow-color), inset -.1rem -.1rem .1rem var(--light-color);
 }
